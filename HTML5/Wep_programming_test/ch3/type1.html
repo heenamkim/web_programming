@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form>
+            이름: <input type="text" name="name"><br>
+            학번: <input type="text" name="number" size=10>
+        </form>
+        <form>
+            패스워드: <input type="password" name="pass">
+        </form>
+        <form>
+            성별:
+            <input type="radio" name="gender" value="male">
+            <input type="radio" name="gender" value="female">
+        </form>
+        <form>
+            과일 선택:
+            <input type="checkbox" name="fruits" value="apple" checked>
+            <input type="checkbox" name="fruits" value="grape">
+            <input type="checkbox" name="fruits" value="orange">
+        </form>
+        <form name="input" action="getid.jsp" method="get">
+            사용자 아이디:
+            <input type="text" name="user"> <br />
+            <input type="submit" name="제출">
+            <input type="reset" name="초기화">
+        </form>
+        <form name="input" action="getid.jsp" method="get">
+            물품가격:
+            <input type="text" name="user"> <br />
+            수량:
+            <input type="text" name="user"> <br />
+            <input type="button" value="계산" onclick="alert('10000원입니다.')">
+        </form>
+        <<button type="button" onclick="alert('안녕하세요')">눌러보세요!</button>
+        <form name="input" action="getid.jsp" method="get">
+            아이디:
+            <input type="text" name="name"><br />
+            <input type="image" src="submit" alt="제출 버튼">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form name="input" action="getfeedback.jsp" method="get">
+            고객의 의견 <br  />
+            <textarea name="feedback" rows="5" cols="50">
+            </textarea>
+        </form>
+        <form action="">
+        <select name="cars">
+            <option value="bmw">BMW</option>
+            <option value="benz">BENZ</option>
+            <option value="hyundai" selected>현대자동차</option>
+            <option value="kia">기아자동차</option>
+        </select>
+        </form>
+        <form>
+            <fieldset>
+                <legend>인적사항입력</legend>
+                이름:         <input type="text"><br>
+                전화번호:     <input type="text"><br>
+                주소:         <input type="text">
+            </fieldset>
+        </form>
+        <form action="proc_form.jsp">
+            <label for="male">남성</label>
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">여성</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+            <input type="submit" value="제출">
+        </form>
+        <form enctype="multipart/form-data">
+            <input type="file" accept="image/jpeg, image/gif">
+        </form>
+    </body>
+</html>
