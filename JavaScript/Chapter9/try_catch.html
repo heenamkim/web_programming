@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            var msg = "";
+            function test() {
+                try {
+                    allert("Hello World!"); // 고의적인 타이핑 오류
+                }
+                catch (error) {
+                    msg = "다음과 같은 오류가 발생하였음:" + error.message;
+                    alert(msg);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="try-catch 시험" onclick="test()">
+    </body>
+</html>
