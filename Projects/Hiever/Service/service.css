@@ -59,36 +59,39 @@
 }
 .stage_of_production_num {
     font-size: 60px;
+    text-align: justify;
+    padding-bottom: 90px;
 }
 .stage_of_production_title {
     text-align: left;
     font-size: 18px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 .stage_of_production_account {
     text-align: left;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 40px 10px 0px;
     font-size: 15px;
     color: gray;
 }
-
-
-/* .together_box {
+.together_box {
     background-color: #D0A9F5;
-    width: 170px;
+    width: 200px;
     height: 200px;
 }
 .together {
-    font-size: 35px;
-    /* padding-left:30px;
-} */
-
-
+    font-size: 37px;
+    transform: translate(100px, 0px);
+}
+.together:hover {
+    font-size: 37px;
+    transform: translate(100px, 0px);
+}
 .consultation {
     background-color: #F2F2F2;
     margin: 0px 40px 0px 40px;
     padding: 40px 5px 40px 5px;
 }
-
 .contact_us {
     padding: 10px 30px 10px 30px;
     color: white;
@@ -97,5 +100,13 @@
     margin-left: 400px;
     font-weight: bold;
     text-decoration: none;
-
+}
+.contact_us:hover {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius:25px;
+    margin-left: 400px;
+    font-weight: bold;
+    text-decoration: none;
 }

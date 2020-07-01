@@ -30,17 +30,44 @@
     padding-top: 10px;
     font-weight: bold;
 }
-.Q {
+
+.accordion {
+    margin: 0px 50px 0px 50px;
+}
+input[id*="Q&A"] {
+    display: none;
+}
+input[id*="Q&A"] + label {
     display: block;
-    padding: 15px 20px;
-    margin: 0px 50px 0px 10px;
-    background-color: #F2F2F2;
-    color: black;
+    padding: 15px;
+    background-color: #F6F7F7;
+    margin-bottom: 10px;
+    color: #6E6E6E;
+    font-size: 15px;
+    cursor: pointer;
     position: relative;
 }
-.A {
-    padding: 15px 0px 40px 30px;;
-    color: black;
+/* input[id*="Q&A"] + label em {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 43px;
+    margin-top: -20px;
+    display: inline-block;
+    background: url(photo/arrow1.png);
+} */
+input[id*="Q&A"] + label + div {
+    max-height: 0;
+    transition: all .8s;
+    overflow: hidden;
+    background: ##F2F2F2;
     font-size: 14px;
-    position: relative;
+    color: #6E6E6E;
 }
+input[id*="Q&A"] + label + div p{
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 30px
+}
+input[id*="Q&A"]:checked + label + div {max-height: 300px;}
+/* input[id*="Q&A"]:checked + label em {background-position: 0 -30px;} */
