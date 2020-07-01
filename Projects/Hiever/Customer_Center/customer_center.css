@@ -1,0 +1,46 @@
+.background {
+    margin: 0px 40px 0px 40px;
+    background-color:#F2F2F2;
+}
+.center {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+}
+.account {
+    color: gray;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 14px;
+}
+.center_kind {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.center_kind_name {
+    font-size: 19px;
+    padding: 10px 0px 10px 0px;
+}
+.center_kind_account {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+}
+.center_kind_address {
+    color: gray;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.Q {
+    display: block;
+    padding: 15px 20px;
+    margin: 0px 50px 0px 10px;
+    background-color: #F2F2F2;
+    color: black;
+    position: relative;
+}
+.A {
+    padding: 15px 0px 40px 30px;;
+    color: black;
+    font-size: 14px;
+    position: relative;
+}

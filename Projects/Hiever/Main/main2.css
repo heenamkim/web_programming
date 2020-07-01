@@ -1,0 +1,73 @@
+.center {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+}
+.account {
+    color: gray;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+.choose_kind {
+    margin: 35px;
+}
+.choose_icon {
+    text-align: left;
+    padding: 0px 0px 10px 20px;
+}
+.choose_icon2 {
+    text-align: left;
+    padding-right: 20px;
+}
+.choose_kind_account {
+    padding: 0px 20px 40px 20px;
+    font-size: 14px;
+    color: gray;
+}
+.client_background {
+    background-color: #F2F2F2;
+    margin: 100px 40px;
+    padding: 50px 0px 150px 680px;
+}
+.client {
+        text-align: left;
+        padding-top: 80px;
+        padding-right: 30px;
+        font-size: 23px;
+}
+.client_account {
+        color: gray;
+        text-align: left;
+        padding-right: 80px;
+        padding-bottom: 40px;
+        font-size: 14px;
+}
+.btn {
+    padding: 10px 30px 10px 30px;
+    color: #8000FF;
+    background-color: #F2F2F2;
+    border-radius:25px;
+    border: 1px solid #8000FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.photo {
+    margin-left: 45px;
+}
+.consultation {
+    background-color: #F2F2F2;
+    margin: 0px 40px 0px 40px;
+    padding: 60px 5px 60px 5px;
+}
+
+.contact_us {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: #7401DF;
+    border-radius:25px;
+    margin-left: 400px;
+    font-weight: bold;
+    text-decoration: none;
+
+}

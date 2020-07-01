@@ -1,0 +1,13 @@
+.menu_bar {
+    padding-right: 100px;
+    padding-top: 35px;
+    text-align: right;
+}
+.menu_bar2 {
+    display: inline;
+    padding: 0 20px;
+}
+.menu_bar3 {
+    text-decoration: none;
+    color: black;
+}

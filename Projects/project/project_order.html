@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Homepage</title>
+        <style>
+            strong { font-size: xx-large; text-align: center; color: red;}
+            li { font-size: 2em;}
+            h1 {text-align: center;}
+            p, h1 {font-family: "Courier New", Times, serlf;}
+        </style>
+    </head>
+    <body>
+        <h1>heenam's cafe</h1>
+        <br>
+        <br>
+        <p>
+            <ul>
+                <strong>목차</strong>
+                <br>
+                <li> <a href="project_cake.html">cake</a></li>
+                <li> <a href="project_bread.html">bread</a></li>
+                <li> <a href="project_order.html">advance order</a></li>
+                <li> <a href="project_map.html">오시는길</a></li>
+            </ul>
+         </p>
+         &lt;케이크 예약&gt; <br>
+         <p>
+             <form>
+                 <fieldset>
+                     <legend>예약자 인적사항</legend>
+                     이름:        <input type="text"> <br>
+                     전화번호:    <input type="text"> <br>
+                     주소:        <input type="text"> <br>
+                     메모:        <br>
+                     <textarea  rows="3" cols="50"></textarea>
+             </form>
+         </p>
+         <p>
+            <form action="">
+            <select name="cake">
+                <option value="케이크 선택" selected>케이크 선택</option>
+                <option value="딸기 케이크" >딸기 케이크</option>
+                <option value="시트론 케이크">시트론 케이크</option>
+                <option value="초코 케이크">초코 케이크</option>
+                <option value="치즈 타르트">치즈 타르트</option>
+                <option value="티라미수 타르트">티라미수 타르트</option>
+                <option value="계절 과일 타르트">계절 과일 타르트</option>
+            </select>
+            <select name="크기">
+                <option value="조각" selected>조각</option>
+                <option value="1">1호</option>
+                <option value="2">2호</option>
+                <option value="3">3호</option>
+            </select>
+            <select name="수량">
+                <option value="1" selected>1개(조각)</option>
+                <option value="2">2개(조각)</option>
+                <option value="3">3개(조각)</option>
+                <option value="4">4개(조각)</option>
+                <option value="5">5개(조각)</option>
+                <option value="6">6개(조각)</option>
+                <option value="7">7개(조각)</option>
+                <option value="8">8개(조각)</option>
+                <option value="9">9개(조각)</option>
+                <option value="10">10개(조각)</option>
+            </select>
+            <select name="초(큰거)">
+                <option value="초" selected>초(큰거)</option>
+                <option value="0">필요없음</option>
+                <option value="1">1개</option>
+                <option value="2">2개</option>
+                <option value="3">3개</option>
+                <option value="4">4개</option>
+                <option value="5">5개</option>
+                <option value="6">6개</option>
+                <option value="7">7개</option>
+                <option value="8">8개</option>
+                <option value="9">9개</option>
+                <option value="10">10개</option>
+            </select>
+            <select name="초(작은거)">
+                <option value="초" selected>초(작은거)</option>
+                <option value="0">필요없음</option>
+                <option value="1">1개</option>
+                <option value="2">2개</option>
+                <option value="3">3개</option>
+                <option value="4">4개</option>
+                <option value="5">5개</option>
+                <option value="6">6개</option>
+                <option value="7">7개</option>
+                <option value="8">8개</option>
+                <option value="9">9개</option>
+                <option value="10">10개</option>
+            </select>
+            <br>
+            예약 날짜: <input type="date">
+            <input type="button" value="예약" onclick="alert('감사합니다 예약되었습니다:)')">
+            </form>
+            </fieldset>
+         </p>
+         &lt;빵 예약&gt; <br>
+         <p>
+             <form>
+                 <fieldset>
+                     <legend>예약자 인적사항</legend>
+                     이름:        <input type="text"> <br>
+                     전화번호:    <input type="text"> <br>
+                     주소:        <input type="text"> <br>
+                     메모:        <br>
+                     <textarea  rows="3" cols="50"></textarea>
+             </form>
+         </p>
+         <p>
+            <form action="">
+            <select name="bread">
+                <option value="빵 선택" selected>빵 선택</option>
+                <option value="바게트">바게트</option>
+                <option value="치즈 치아바타">치즈 치아바타</option>
+                <option value="단호박 크림치즈 깜빠뉴">단호박 크림치즈 깜빠뉴</option>
+                <option value="무화과 깜뺘뉴">무화과 깜뺘뉴</option>
+                <option value="앙 브레첼">앙 브레첼</option>
+                <option value="앙버터">앙버터</option>
+            </select>
+            <select name="수량">
+                <option value="1">1개</option>
+                <option value="2">2개</option>
+                <option value="3">3개</option>
+                <option value="4">4개</option>
+                <option value="5">5개</option>
+                <option value="6">6개</option>
+                <option value="7">7개</option>
+                <option value="8">8개</option>
+                <option value="9">9개</option>
+                <option value="10">10개</option>
+            </select>
+            <br>
+            예약 날짜: <input type="date">
+            <input type="button" value="예약" onclick="alert('감사합니다 예약되었습니다:)')">
+            </form>
+            </fieldset>
+         </p>
+         <p>
+         모든 예약은 2~3일 전에 예약 가능하며 케이크 위에 글씨를 원하시는 분은 메모란에 입력 부탁드립니다.
+         </p>
+    </body>
+</html>
