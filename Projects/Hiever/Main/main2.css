@@ -60,7 +60,6 @@
     margin: 0px 40px 0px 40px;
     padding: 60px 5px 60px 5px;
 }
-
 .contact_us {
     padding: 10px 30px 10px 30px;
     color: white;
@@ -69,5 +68,13 @@
     margin-left: 400px;
     font-weight: bold;
     text-decoration: none;
-
+}
+.contact_us:hover {
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background-color: black;
+    border-radius:25px;
+    margin-left: 400px;
+    font-weight: bold;
+    text-decoration: none;
 }
