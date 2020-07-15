@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function checkNumberic(elem, msg) {
+                var exp = /^[0-9]+$/;
+                if (elem.value.match(exp)) {
+                    return true;
+                } else {
+                    alert(msg);
+                    elem.focus();
+                    return felse;
+                }
+            }
+        </script>
+        <form>
+            전화번호(-없이 입력): <input type="text" id="phone">
+            <input type="button"
+            onclick="checkNumberic(document.getElementById('phone'), '숫자만 입력하세요!')"
+            value='확인'>
+        </form>
+    </body>
+</html>
