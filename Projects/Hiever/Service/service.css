@@ -53,7 +53,8 @@
 
 .stage_of_production {
     text-align: left;
-    margin: 130px 40px 130px 40px;
+    margin: 130px 0px 130px 60px;
+    padding-right: 80px;
 }
 .stage_of_production_num {
     font-size: 60px;
@@ -64,26 +65,30 @@
     text-align: left;
     font-size: 18px;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .stage_of_production_account {
     text-align: left;
-    padding: 0px 40px 10px 0px;
+    padding: 30px 50px 10px 10px;
     font-size: 15px;
     color: gray;
 }
-.together_box {
+.togethers {
     background-color: #D0A9F5;
     width: 200px;
     height: 200px;
 }
 .together {
     font-size: 37px;
-    transform: translate(100px, 0px);
+    transform: translate(70px, 0px);
 }
-.together:hover {
+.together:hover{
     font-size: 37px;
     transform: translate(100px, 0px);
+}
+.together:hover + .togethers {
+    background-color: #7401DF;
+
 }
 .consultation {
     background-color: #F2F2F2;

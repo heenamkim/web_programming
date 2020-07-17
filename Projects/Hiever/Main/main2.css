@@ -28,12 +28,10 @@
 .client_background {
     background-color: #F2F2F2;
     margin: 100px 40px;
-    padding: 50px 0px 150px 680px;
+    padding: 50px 50px 150px 150px;
 }
 .client {
         text-align: left;
-        padding-top: 80px;
-        padding-right: 30px;
         font-size: 23px;
 }
 .client_account {
@@ -49,6 +47,14 @@
     background-color: #F2F2F2;
     border-radius:25px;
     border: 1px solid #8000FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn:hover {
+    padding: 10px 30px 10px 30px;
+    color: #F2F2F2;
+    background-color: #8000FF;
+    border-radius:25px;
     font-weight: bold;
     text-decoration: none;
 }
