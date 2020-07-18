@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            function checkLength(numbers) {
+                if (numbers.value.length == 11) {
+                    var exp = /^[0-9]+$/;
+                    if (elem.value.match(exp)) {
+                        return true;
+                    }
+                } else
+                alert("올바른 전화번호를 입력하시오!");
+                numbers.focus();
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>회원 신청서</h3>
+        이름* <input type="text" name="" value=""> <br>
+        성별* <input type="radio" name="femal">남성
+              <input type="radio" name="femal" value="">여성 <br>
+        휴대폰 번호 Phone* <input type="text" name="" value=""> <br>
+        이메일* <input type="text" name="" value=""> <br>
+        패스워드(6-8글자)* <input type="text" id="p"> <br>
+        패스워드 검증* <input type="text" id=""> <br>
+        <input type="button" onclick="checkLength(document.getElementById('p'), 11, 11)" value="제출">
+        <input type="button" value="지우기">
+    </body>
+</html>
