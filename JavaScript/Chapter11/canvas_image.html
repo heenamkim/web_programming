@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="700" height="400"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+            var image = new Image();
+            image.src = "html5_logo.jpg";
+
+            image.onload = function() {
+                context.drawImage(image, 0, 0);
+            };
+        </script>
+    </body>
+</html>

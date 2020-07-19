@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.moveTo(50, 100);
+            context.lineTo(75, 50);
+            context.lineTo(100, 100);
+            context.fillStyle = "green";
+            context.closePath();
+            context.fill();
+        </script>
+    </body>
+</html>

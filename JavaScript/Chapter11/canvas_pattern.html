@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="1600" height="800"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context  = canvas.getContext('2d');
+
+            var image = new Image();
+            image.src = "pattern.jpg";
+            image.onload = function() {
+                var pattern = context.createPattern(image, "repeat");
+
+                context.rect(0, 0, canvas.width, canvas.height);
+                context.fillStyle = pattern;
+                context.fill();
+            }
+        </script>
+    </body>
+</html>
