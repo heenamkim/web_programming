@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="1000" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+
+            context.beginPath();
+            context.moveTo(0, 0);
+            context.lineTo(100, 100);
+            context.lineTo(200, 0);
+            context.lineTo(300, 100);
+            context.lineTo(400, 0);
+            context.lineTo(500, 100);
+            context.stroke();
+        </script>
+    </body>
+</html>
