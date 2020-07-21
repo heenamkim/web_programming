@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    </head>
+    <body>
+        <button>show it</button>
+        <img id="dog" src="dog.jpg"
+        alt="" width="300" height="400" style="display:none">
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("#dog").show("slow");
+                });
+            });
+        </script>
+    </body>
+</html>
