@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            div {
+                height: 60px;
+                width: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1" style="background-color: blue;"></div>
+        <script>
+            $(document).ready(function() {
+                $("#button1").click(function() {
+                    var color = $("#div1").css("background-color");
+                    $("#result").text("background-color:" + color);
+                });
+                $("#button2").click(function() {
+                    $("#div1").css("background-color", "red");
+                });
+            });
+        </script>
+        <button id="button1">css(element)</button>
+        <button id="button2">css(element,style)</button>
+        <p id="result">여기에 결과가 표시됩니다.</p>
+
+    </body>
+</html>

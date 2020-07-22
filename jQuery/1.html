@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            $(document).ready(function() {
+                $("#button1").click(function() {
+                    $("#p").show();
+                });
+                $("#button2").click(function() {
+                    $("#p").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="p">이것은 p요소입니다.</p>
+        <button id="button1">보이기</button>
+        <button id="button2">감추기</button>
+    </body>
+</html>
