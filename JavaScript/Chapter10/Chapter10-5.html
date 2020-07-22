@@ -4,16 +4,42 @@
         <meta charset="utf-8">
         <title></title>
         <script>
-            function checkLength(numbers) {
-                if (numbers.value.length == 11) {
-                    var exp = /^[0-9]+$/;
-                    if (elem.value.match(exp)) {
+            function phoneNumber(numbers) {
+                var exp = /^[0-9]+$/;
+                if (numbers.value.match(exp)) {
+                    if (numbers.value.length == 11) {
                         return true;
+                    } else {
+                        alert("11자리 입력해 주세요.");
+                        numbers.focus();
+                        return false;
                     }
-                } else
-                alert("올바른 전화번호를 입력하시오!");
-                numbers.focus();
-                return false;
+                } else {
+                    alert("숫자로만 입력해 주세요.");
+                    numbers.focus();
+                    return false;
+                }
+            }
+
+            function mail(email) {
+                var exp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,}$/;
+                if (email.value.match(exp)) {
+                    return true;
+                } else {
+                    alert("정확한 이메일 주소를 입력해 주세요.");
+                    numbers.focus();
+                    return false;
+                }
+            }
+            function password(len) {
+                var exp = len.value;
+                if (exp.length >= 8 && exp.length <= 11) {
+                    return true;
+                } else {
+                    alert("8-11글자 사이로 입력해 주세요.");
+                    numbers.focus();
+                    return false;
+                }
             }
         </script>
     </head>
@@ -22,11 +48,11 @@
         이름* <input type="text" name="" value=""> <br>
         성별* <input type="radio" name="femal">남성
               <input type="radio" name="femal" value="">여성 <br>
-        휴대폰 번호 Phone* <input type="text" name="" value=""> <br>
-        이메일* <input type="text" name="" value=""> <br>
-        패스워드(6-8글자)* <input type="text" id="p"> <br>
-        패스워드 검증* <input type="text" id=""> <br>
-        <input type="button" onclick="checkLength(document.getElementById('p'), 11, 11)" value="제출">
+        휴대폰 번호 Phone* <input type="text" name="" value="" id="phone"> <br>
+        이메일* <input type="text" id="email"> <br>
+        패스워드(8-11글자)* <input type="text" id="PIN"> <br>
+        패스워드 검증* <input type="text"> <br>
+        <input type="button" onclick="phoneNumber(document.getElementById('phone')); mail(document.getElementById('email')); password(document.getElementById('PIN'));" value="제출">
         <input type="button" value="지우기">
     </body>
 </html>
