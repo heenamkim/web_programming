@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <button onclick="getGeolocation()">위치 정보 얻기</button>
+        <div id="target"></div>
+        <script>
+            var myDiv =document.getElementById('target');
+            function getGeolocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showLocation);
+                }
+            }
+            function showLocation(location) {
+                myDiv.innerHTML = "(위도: " + location.coords.latitude +", 경도: "+ location.coords.longitude +")"
+            }
+        </script>
+    </body>
+</html>

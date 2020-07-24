@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <button onclick="getGeolocation()">지도보이기</button>
+        <div id="target"></div>
+        <script>
+            var myDiv =document.getElementById('target');
+            function getGeolocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showGeolocation);
+                }
+            }
+            function showGeolocation(position) {
+                var pos = position.coords.latitude +","+ position.coords.longitude;
+                var url = "http://maps.googleapis.com/maps/api/staticmap?center="+pos+"&zoom=14&size=500x300&sensor=false";
+                window.open(url);
+            }
+        </script>
+    </body>
+</html>
