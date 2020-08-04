@@ -19,8 +19,6 @@
     border: 1px solid #F2F2F2;
     background: #FAFAFA;
     display: inlin;
-    z-index: 9999;
-
 }
 
 .upper_bar_search2 {
@@ -28,7 +26,6 @@
     width: 180px;
     height: 28px;
     border: none;
-
 }
 
 .upper_bar_menu {
