@@ -1,0 +1,41 @@
+.upper_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0px 1px black;
+    z-index: 9999;
+    padding-top: 15px;
+}
+.upper_bar_main {
+    padding-left: 150px;
+    padding-right: 250px;
+}
+
+.upper_bar_search {
+    width: 210px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #F2F2F2;
+    background: #FAFAFA;
+    /* display: inline; */
+    z-index: 9999;
+
+}
+
+.upper_bar_search2 {
+    padding-left: 30px;
+    width: 180px;
+    height: 28px;
+    border: none;
+
+}
+
+.upper_bar_menu {
+    display: inline;
+    padding-left: 150px;
+}
+
+.upper_bar_logo {
+    padding-left: 15px;
+}
